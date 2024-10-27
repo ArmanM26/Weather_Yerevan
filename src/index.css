@@ -1,0 +1,38 @@
+/* NotFound.css */
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 36px;
+  color: #e74c3c; /* Red color for emphasis */
+  margin-bottom: 10px;
+}
+
+.not-found-message {
+  font-size: 18px;
+  color: #7f8c8d; /* Grey color for message */
+  margin-bottom: 20px;
+}
+
+.not-found-link {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease;
+}
+
+.not-found-link:hover {
+  background-color: #1c5980; /* Darker shade on hover */
+}

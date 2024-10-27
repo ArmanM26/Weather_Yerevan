@@ -1,0 +1,125 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://img.freepik.com/free-photo/thunderstorm-countryside_23-2151762533.jpg?t=st=1729954276~exp=1729957876~hmac=746af380ede6e8098ff561955790f3cf935e62660185718a69ced8037bca1e7f&w=1380') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #fefefe; /* Lighter text for better contrast */
+  filter: brightness(0.75); /* Slightly darker for better readability */
+}
+
+h1 {
+  color: #f1c40f; /* Bright yellow for contrast */
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+
+input[type="text"] {
+  width: 300px;
+  border: 2px solid #f1c40f; /* Match input border with heading color */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+input[type="text"]:focus {
+  border-color: #e67e22; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(231, 126, 34, 0.5); /* Focus shadow effect */
+}
+
+button {
+  background-color: #e67e22; /* Orange for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+button:hover {
+  background-color: #d35400; /* Darker orange on hover */
+  transform: translateY(-2px);
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.weather-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px; /* More rounded corners */
+  padding: 20px;
+  width: 200px; /* Slightly wider for better layout */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* White with opacity */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.weather-card img {
+  width: 70px;
+  height: 70px;
+}
+
+.error-message {
+  color: #e74c3c; /* Red for error messages */
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.loading-message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 90%; /* Responsive width */
+  }
+
+  .weather-card {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px; /* Smaller heading for small screens */
+  }
+
+  button {
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 14px; /* Smaller font for buttons */
+  }
+
+  .weather-card {
+    width: 120px; /* Smaller card size */
+  }
+
+  .weather-card img {
+    width: 60px;
+    height: 60px; /* Adjust image size */
+  }
+}
